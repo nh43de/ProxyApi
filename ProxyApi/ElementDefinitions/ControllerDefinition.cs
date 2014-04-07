@@ -31,6 +31,11 @@ namespace ProxyApi.ElementDefinitions
 		/// The URL controller name.
 		/// </value>
 		public string UrlName { get; set; }
+
+        /// <summary>
+        /// Gets the Documentation added as comments for this definition
+        /// </summary>
+        public string Documentation { get; set; }
 		
 		/// <summary>
 		/// Gets the action methods that appear on the controller.

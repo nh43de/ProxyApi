@@ -58,6 +58,7 @@ namespace ProxyApi.Factories
 			definition.Name	= method.GetProxyName();
 			definition.Type = GetMethodType(method);
 			definition.Url	= GetUrl(controllerDefinition, GetExplicitActionName(method) ?? method.Name.ToLower());
+            definition.Documentation = GetDocumentation(method);
 
 			var index		= 0;
 			var parameters	= method.GetParameters();
@@ -84,6 +85,16 @@ namespace ProxyApi.Factories
 		#endregion
 
 		#region Private Members
+
+        private string GetDocumentation(MethodInfo method)
+        {
+            var doc = method.GetCustomAttribute<DocumentationAttribute>();
+            
+            if (doc != null)
+                return doc.Text;
+            else
+                return null;
+        }
 
         private string GetExplicitActionName(MethodInfo method)
         {

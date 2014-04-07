@@ -32,6 +32,11 @@ namespace ProxyApi.ElementDefinitions
 		/// </summary>
 		public string Name { get; set; }
 
+        /// <summary>
+        /// Gets the Documentation added as comments for this definition
+        /// </summary>
+        public string Documentation { get; set; }
+
 		/// <summary>
 		/// Gets the MVC/WebApi URL for this definition.
 		/// </summary>
@@ -52,5 +57,5 @@ namespace ProxyApi.ElementDefinitions
 		/// The body parameters.
 		/// </value>
 		public IParameterDefinition BodyParameter { get; set; }
-	}
+    }
 }

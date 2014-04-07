@@ -56,6 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ContextProvider.cs" />
+    <Compile Include="DocumentationAttribute.cs" />
     <Compile Include="ElementDefinitions\ParameterDefinition.cs" />
     <Compile Include="ElementDefinitions\IParameterDefinition.cs" />
     <Compile Include="IContextProvider.cs" />

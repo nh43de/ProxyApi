@@ -29,6 +29,11 @@ namespace ProxyApi.ElementDefinitions
 		/// </value>
 		string UrlName { get; }
 
+        /// <summary>
+        /// Gets the Documentation added as comments for this definition
+        /// </summary>
+        string Documentation { get; }
+
 		/// <summary>
 		/// Gets the type of the controller
 		/// </summary>

@@ -89,6 +89,11 @@
 							.Concat(new [] { "additionalParameters" })
 							.ToArray());
 #>
+	<# if ( method.Documentation != null ) { #>
+	/* 
+	 *  <#= method.Documentation #>
+	 */
+    <# } #>
 	<#= method.Name #>: function(<#=parameterList#>) {
 		return invoke.call(this, "<#= method.Url #>", "<#= method.Type.ToString().ToLower() #>", 
 			$.extend({},

@@ -14,6 +14,8 @@ namespace ProxyApi.Sample.Controllers
 			return View();
 		}
 
+        
+        [ProxyApi.Documentation("This is my demo documentation to prove it works")]
 		public ActionResult OtherPage()
 		{
 			return PartialView();

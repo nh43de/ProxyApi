@@ -27,6 +27,11 @@ namespace ProxyApi.ElementDefinitions
 		/// </summary>
 		string Url { get; }
 
+        /// <summary>
+        /// Gets the Documentation added as comments for this definition
+        /// </summary>
+        string Documentation { get; }
+
 		/// <summary>
 		/// Gets a list containing the URL parameters.  Parameter values are in the format [index, name]
 		/// </summary>
